@@ -1,0 +1,162 @@
+CREATE DATABASE ATIVIDADE3;
+
+USE AULINHA;
+
+CREATE TABLE CLIENTES(
+	CODIGO_CLIENTE INT (10),
+    NOME VARCHAR (50),
+    CPF VARCHAR (15),
+    EMAIL VARCHAR (100),
+    TELEFONE VARCHAR (14)
+);
+
+CREATE TABLE PRODUTOS(
+	CODIGO_PRODUTOS INT (10),
+    DESCRICAO VARCHAR (100),
+    VALOR NUMERIC (10.2),
+    QUANTIDADE INT (255)
+);
+
+INSERT INTO CLIENTES(CODIGO_CLIENTE, NOME, CPF, EMAIL, TELEFONE) VALUE(598, 'Luan', '5955959595924', 'luan@gmail.com', '11959854857'),
+(599, 'Ana', '12345678901', 'ana@gmail.com', '11987654321'),
+(600, 'Carlos', '23456789012', 'carlos@hotmail.com', '11923456789'),
+(601, 'Beatriz', '34567890123', 'beatriz@yahoo.com', '11934567890'),
+(602, 'Daniel', '45678901234', 'daniel@gmail.com', '11945678901'),
+(603, 'Fernanda', '56789012345', 'fernanda@hotmail.com', '11956789012'),
+(604, 'Eduardo', '67890123456', 'eduardo@gmail.com', '11967890123'),
+(605, 'Gisele', '78901234567', 'gisele@gmail.com', '11978901234'),
+(606, 'Felipe', '89012345678', 'felipe@hotmail.com', '11989012345'),
+(607, 'Juliana', '90123456789', 'juliana@gmail.com', '11990123456'),
+(608, 'Ricardo', '01234567890', 'ricardo@gmail.com', '11901234567'),
+(609, 'Laura', '12345678012', 'laura@hotmail.com', '11912345678'),
+(610, 'Bruno', '23456789123', 'bruno@gmail.com', '11923456789'),
+(611, 'Patrícia', '34567890234', 'patricia@gmail.com', '11934567890'),
+(612, 'Sérgio', '45678901345', 'sergio@hotmail.com', '11945678901'),
+(613, 'Camila', '56789012456', 'camila@yahoo.com', '11956789012'),
+(614, 'Lucas', '67890123567', 'lucas@gmail.com', '11967890123'),
+(615, 'Tatiane', '78901234678', 'tatiane@hotmail.com', '11978901234'),
+(616, 'Ricardo', '89012345789', 'ricardo@yahoo.com', '11989012345'),
+(617, 'Juliana', '90123456890', 'juliana@gmail.com', '11990123456'),
+(618, 'Amanda', '01234567901', 'amanda@gmail.com', '11901234567'),
+(619, 'Leandro', '12345679012', 'leandro@hotmail.com', '11912345678'),
+(620, 'Natália', '23456780123', 'natalia@gmail.com', '11923456789'),
+(621, 'Marcos', '34567891234', 'marcos@gmail.com', '11934567890'),
+(622, 'Roberta', '45678902345', 'roberta@hotmail.com', '11945678901'),
+(623, 'Andreia', '56789013456', 'andreia@yahoo.com', '11956789012'),
+(624, 'Thiago', '67890124567', 'thiago@gmail.com', '11967890123'),
+(625, 'Patrícia', '78901235678', 'patricia@hotmail.com', '11978901234'),
+(626, 'Eduardo', '89012346789', 'eduardo@gmail.com', '11989012345'),
+(627, 'Vanessa', '90123457890', 'vanessa@gmail.com', '11990123456'),
+(628, 'José', '01234567890', 'jose@hotmail.com', '11901234567'),
+(629, 'Marcela', '12345678901', 'marcela@gmail.com', '11912345678'),
+(630, 'Robson', '23456789012', 'robson@hotmail.com', '11923456789'),
+(631, 'Sofia', '34567890123', 'sofia@yahoo.com', '11934567890'),
+(632, 'Gustavo', '45678901234', 'gustavo@gmail.com', '11945678901'),
+(633, 'Larissa', '56789012345', 'larissa@hotmail.com', '11956789012'),
+(634, 'André', '67890123456', 'andre@gmail.com', '11967890123'),
+(635, 'Patrícia', '78901234567', 'patricia@gmail.com', '11978901234'),
+(636, 'Felipe', '89012345678', 'felipe@hotmail.com', '11989012345'),
+(637, 'Letícia', '90123456789', 'leticia@gmail.com', '11990123456'),
+(638, 'Marcelo', '01234567890', 'marcelo@hotmail.com', '11901234567'),
+(639, 'Simone', '12345678901', 'simone@gmail.com', '11912345678');
+
+INSERT INTO PRODUTOS (CODIGO_PRODUTOS, DESCRICAO, VALOR, QUANTIDADE) VALUES (56, 'Arroz', '30,99', '896');
+(57, 'Feijão', '25,50', '453'),
+(58, 'Macarrão', '7,99', '1200'),
+(59, 'Açúcar', '12,30', '300'),
+(60, 'Sal', '4,50', '700'),
+(61, 'Óleo', '9,90', '550'),
+(62, 'Leite', '3,20', '1500'),
+(63, 'Queijo', '25,00', '200'),
+(64, 'Presunto', '19,80', '300'),
+(65, 'Manteiga', '11,50', '400'),
+(66, 'Café', '16,99', '250'),
+(67, 'Chá', '8,25', '600'),
+(68, 'Farinha', '7,75', '800'),
+(69, 'Batata', '10,99', '500'),
+(70, 'Cebola', '5,60', '350'),
+(71, 'Tomate', '8,80', '450'),
+(72, 'Alface', '3,90', '900'),
+(73, 'Cenoura', '6,20', '700'),
+(74, 'Maçã', '12,00', '650'),
+(75, 'Banana', '4,99', '1000'),
+(76, 'Laranja', '6,50', '800'),
+(77, 'Manga', '7,00', '300'),
+(78, 'Pera', '13,00', '400'),
+(79, 'Uva', '15,99', '250'),
+(80, 'Iogurte', '5,80', '600'),
+(81, 'Requeijão', '10,20', '450'),
+(82, 'Creme de Leite', '7,40', '350'),
+(83, 'Massa de Tomate', '6,10', '800'),
+(84, 'Catchup', '5,50', '500'),
+(85, 'Maionese', '7,90', '400'),
+(86, 'Mostarda', '4,20', '650'),
+(87, 'Pipoca', '3,80', '900'),
+(88, 'Biscoito', '8,00', '550'),
+(89, 'Bolacha', '9,60', '300'),
+(90, 'Chocolate', '4,90', '700'),
+(91, 'Sorvete', '14,50', '250'),
+(92, 'Azeitona', '22,00', '350'),
+(93, 'Mortadela', '11,75', '500'),
+(94, 'Salsicha', '12,60', '400'),
+(95, 'Linguiça', '15,40', '300'),
+(96, 'Hambúrguer', '9,90', '600'),
+(97, 'Frango', '22,80', '350'),
+(98, 'Carne Bovina', '35,00', '200'),
+(99, 'Peixe', '28,00', '150'),
+(100, 'Cerveja', '6,80', '800');
+
+SELECT * FROM CLIENTES;
+SELECT * FROM PRODUTOS;
+
+DELETE FROM CLIENTES WHERE NOME = 'Luan';
+DELETE FROM CLIENTES WHERE NOME = 'Ana';
+DELETE FROM CLIENTES WHERE NOME = 'Carlos';
+DELETE FROM CLIENTES WHERE NOME = 'Beatriz';
+DELETE FROM CLIENTES WHERE NOME = 'Daniel';
+
+SELECT * FROM CLIENTES;
+
+DELETE FROM PRODUTOS WHERE DESCRICAO = 'Presunto';
+DELETE FROM PRODUTOS WHERE DESCRICAO = 'Salsicha';
+DELETE FROM PRODUTOS WHERE DESCRICAO = 'Sorvete';
+
+SELECT * FROM PRODUTOS;
+
+ALTER TABLE PRODUTOS CHANGE DESCRICAO PRODUTO VARCHAR (100);
+
+DESCRIBE PRODUTOS;
+
+ALTER TABLE CLIENTES CHANGE TELEFONE CELULAR VARCHAR (14);
+
+DESCRIBE CLIENTES;
+
+ALTER TABLE CLIENTES MODIFY COLUMN CODIGO_CLIENTE INT (10) NOT NULL;
+ALTER TABLE CLIENTES MODIFY COLUMN NOME VARCHAR (50) NOT NULL;
+ALTER TABLE CLIENTES MODIFY COLUMN CPF VARCHAR (15) NOT NULL;
+ALTER TABLE CLIENTES MODIFY COLUMN EMAIL VARCHAR (100) NOT NULL;
+ALTER TABLE CLIENTES MODIFY COLUMN CELULAR VARCHAR (14) NOT NULL;
+ALTER TABLE PRODUTOS MODIFY COLUMN CODIGO_PRODUTOS INT (10) NOT NULL;
+ALTER TABLE PRODUTOS MODIFY COLUMN PRODUTO VARCHAR (100) NOT NULL;
+ALTER TABLE PRODUTOS MODIFY COLUMN VALOR NUMERIC (10.2) NOT NULL;
+ALTER TABLE PRODUTOS MODIFY COLUMN QUANTIDADE INT (255) NOT NULL;
+
+DESCRIBE CLIENTES;
+
+DESCRIBE PRODUTOS;
+
+SELECT * FROM CLIENTES WHERE CODIGO_CLIENTE = 608;
+SELECT * FROM CLIENTES WHERE CODIGO_CLIENTE > 610;
+SELECT * FROM CLIENTES WHERE CODIGO_CLIENTE < 608;
+SELECT * FROM CLIENTES WHERE CODIGO_CLIENTE >= 615;
+SELECT * FROM CLIENTES WHERE NOME <> 'Luan';
+SELECT * FROM PRODUTOS WHERE CODIGO_PRODUTOS >85 AND CODIGO_PRODUTOS <100;
+SELECT * FROM PRODUTOS WHERE PRODUTO = 'Arroz' or PRODUTO = 'Bolacha';
+SELECT * FROM PRODUTOS WHERE NOT (valor between 9.60 AND 35.00);
+SELECT * FROM PRODUTOS WHERE PRODUTO LIKE "Carne Bov%"; 
+SELECT * FROM PRODUTOS WHERE PRODUTO IN ('Frango','Massa de Tomate','azeitona');  
+SELECT COUNT(QUANTIDADE) FROM PRODUTOS;
+SELECT SUM(VALOR) FROM PRODUTOS;
+SELECT MAX(VALOR) AS VALOR_MAXIMO FROM PRODUTOS;
+SELECT MIN(VALOR) AS VALOR_MINIMO FROM PRODUTOS;
+SELECT AVG(VALOR) AS MEDIA FROM PRODUTOS;
